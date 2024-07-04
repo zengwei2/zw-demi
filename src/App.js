@@ -19,7 +19,7 @@ export default defineComponent({
     return { val, click };
   },
   render() {
-    return h('div', { attrs: { id: '#app' } }, [
+    return h('div', isVue2 ? { attrs: { id: 'app' } } : { id: 'app' }, [
       h('div', {}, this.val),
       h(
         'button',
