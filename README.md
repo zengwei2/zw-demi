@@ -15,8 +15,6 @@ npm run dev
 
 ### 打包 lib 库
 
-l
-
 ```
 1. npm login
   登录 npm, npm login zengwei11223
@@ -32,7 +30,7 @@ l
     src/App.js:  构建的入口文件为 app.js
 
 3. 执行命令 npm publish
-  发布包。然后在 https://www.npmjs.com/package/zw-demi 中可查看
+  发布包。然后在 [npm 官网](https://www.npmjs.com/package/zw-demi) 中可查看
 ```
 
 ### 使用
