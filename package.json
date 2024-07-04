@@ -1,15 +1,18 @@
 {
-  "name": "bdap-common-cli",
-  "version": "0.1.0",
-  "private": true,
+  "name": "zw-demi",
+  "version": "0.1.19",
+  "private": false,
+  "main": "dist/zw-demi.umd.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "lib": "vue-cli-service build --target lib --name zw-demi src/App.js",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postinstall": "node -e \"try{require('./src/scripts/index.js')}catch(e){}\""
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue-demi": "^0.14.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,7 +22,17 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.7.16",
+    "vue": "^2.7.16"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
   },
   "eslintConfig": {
     "root": true,
